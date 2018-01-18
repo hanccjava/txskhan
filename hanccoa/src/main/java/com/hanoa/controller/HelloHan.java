@@ -15,9 +15,8 @@ import javax.annotation.Resource;
 public class HelloHan {
     @Resource
     private LeaderProperties leaderProperties;
-
     @RequestMapping(value = "login" ,method = RequestMethod.GET)
     public String loginSay(){
-        return "欢迎加入韩氏控股集团"+ leaderProperties.getCEO();
+        return "欢迎加入韩氏控股集团" ;
     }
 }

@@ -1,5 +1,6 @@
 package com.hanoa.controller.dao.vo;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
@@ -11,6 +12,8 @@ import org.springframework.stereotype.Component;
 public class LeaderProperties {
     private String CEO;
     private String CFO;
+    @Value("${leader.value}")
+    private String value;
 
     public String getCEO() {
         return CEO;
@@ -26,5 +29,13 @@ public class LeaderProperties {
 
     public void setCFO(String CFO) {
         this.CFO = CFO;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
     }
 }
