@@ -1,4 +1,4 @@
-package com.hanoa.controller.dao.vo;
+package com.hanoa.dao.vo;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
