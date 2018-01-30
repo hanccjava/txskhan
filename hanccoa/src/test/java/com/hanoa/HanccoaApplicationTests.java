@@ -25,9 +25,9 @@ public class HanccoaApplicationTests {
     @Test
     public void findByNameTest() {
       //  String id = UUID.randomUUID().toString();
-        String id = "640c802e-7cbc-4c17-a487-5a9d48c35aab";
-        String name = "袁安然";
-        String age = "18";
+        String id = "XXXX";
+        String name = "XXXX";
+        String age = "XXXX";
 //        userMapper.insertUser(id, name, age);
 //        User user = userMapper.findByName(name);
 
