@@ -1,12 +1,21 @@
 package com.hanoa.dao.vo;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
- * Created by hpy on 2018/1/19.
+ * Created by txsk on 2018/2/22.
  */
-public class User {
+@Table(name = "dept")
+@Entity
+public class Depts {
+    @Id
     private String id;
     private String name;
-    private String age;
+    @Column(name = "leaderId")
+    private String leaderId;
 
     public String getId() {
         return id;
@@ -24,20 +33,20 @@ public class User {
         this.name = name;
     }
 
-    public String getAge() {
-        return age;
+    public String getLeaderId() {
+        return leaderId;
     }
 
-    public void setAge(String age) {
-        this.age = age;
+    public void setLeaderId(String leaderId) {
+        this.leaderId = leaderId;
     }
 
     @Override
     public String toString() {
-        final StringBuffer sb = new StringBuffer("User{");
+        final StringBuffer sb = new StringBuffer("Depts{");
         sb.append("id='").append(id).append('\'');
         sb.append(", name='").append(name).append('\'');
-        sb.append(", age='").append(age).append('\'');
+        sb.append(", leaderId='").append(leaderId).append('\'');
         sb.append('}');
         return sb.toString();
     }

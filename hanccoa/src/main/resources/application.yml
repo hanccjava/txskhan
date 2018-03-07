@@ -3,11 +3,10 @@ server:
   context-path: /hanoa
 leader:
   CEO: 韩沛毅
-  CFO: 袁安然
   value: ${random.value}
 spring:
   datasource:
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://192.168.3.48/hanoa
+      url: jdbc:mysql://localhost/hanoa
       username: root
       password: loveu588
